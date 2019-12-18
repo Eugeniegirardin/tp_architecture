@@ -68,12 +68,12 @@
     for($i=($page-1);$i<=($page+1);$i++)
     {
 
-      if($i <=0){}
+      if($i < =0){}
 
         else{
           if($i > $nbpages){}
             else{
-              echo "<a href='commentaires.php?page=$i'> $i </a>";}
+              echo "<a href='commentaires.php?page=$i' $i </a>";}
 
             }
           }
