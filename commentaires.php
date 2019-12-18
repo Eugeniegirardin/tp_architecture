@@ -29,14 +29,14 @@
 
   if(!isset($_GET['page']))
   {
-    $page=0;
+    $page=1;
   }
   else
   {
     $page=$_GET['page'];
   }
   $commparpage=4;
-  $premiercomm=$commparpage*($page-1);
+  $premiercomm=$commparpage*($page-2);
   $req="SELECT * FROM comment ORDER BY id LIMIT $premiercomm,$commparpage";/* LIMIT dit ou je commence et combien j'en prends*/
   $res=mysqli_query($lien,$req);
   if(!$res)
