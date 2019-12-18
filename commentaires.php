@@ -29,7 +29,7 @@
 
   if(!isset($_GET['page']))
   {
-    $page=1;
+    $page=0;
   }
   else
   {
