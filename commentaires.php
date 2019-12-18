@@ -65,7 +65,7 @@
     echo "<br> Pages : ";
     echo "<a href='commentaires.php?page=1'> </a>";
     echo "<a href='commentaires.php?page=".($page-1)."'> </a>";
-    for($i=($page-2);$i<=($page+2);$i++)
+    for($i=($page-1);$i<=($page+1);$i++)
     {
 
       if($i <=0){}
